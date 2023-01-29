@@ -1,5 +1,6 @@
 .profile {
   width :300px;
+  position: relative;
   background-color: #EBEBEB;
   text-align: center;
   padding : 1rem;
@@ -15,3 +16,13 @@
   height:200px;
   border-radius: 100%;
 }
+.new {
+  color: black;
+  padding : 0.2rem 0.5rem;
+  border-radius: 10px;
+  background-color:cornflowerblue;
+  position:absolute;
+  top: 10%;
+  left: 70%;
+}
+
