@@ -1,4 +1,5 @@
 import React from "react";
+import Avartar from "./components/Avartar";
 import Profile from "./components/Profile";
 import { User } from "./types/User";
 
@@ -26,8 +27,10 @@ const AppProfile:React.FC = () => {
 
   return (
     <div>
-       {UserInformation.map((item:User) => (
-         <Profile name={item.name} title={item.title} image={item.image} isNew={item.isNew}/>
+      <button onClick={(e:React.MouseEvent<HTMLElement>) => console.log(e)}>BUTTON</button>
+      <Avartar image="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"/>
+       {UserInformation.map((item:User,idx:number) => (
+         <Profile key={idx} name={item.name} title={item.title} image={item.image} isNew={item.isNew}/>
        ))}
     </div>
   )

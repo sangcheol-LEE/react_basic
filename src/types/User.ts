@@ -1,3 +1,6 @@
+import { SetStateAction } from "react";
+import { Dispatch } from "react";
+
 export interface User {
       name : string;
       title : string;
@@ -8,4 +11,10 @@ export interface User {
 export interface AvartarType {
       image : string;
       isNew ?: boolean;
+}
+
+
+export interface CounterFunc {
+      total ?: number;
+      setTotal : Dispatch<SetStateAction<number>>
 }
