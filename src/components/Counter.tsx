@@ -2,7 +2,7 @@ import React,{useState}from 'react'
 import "../App.css"
 import {CounterFunc} from "../types/User";
 
-const Counter:React.FC<CounterFunc> = ({setTotal}) => {
+const Counter:React.FC<CounterFunc> = ({total,setTotal}) => {
    const [count, setCount] = useState<number>(0)
 
    const handleCount= () => {
@@ -11,7 +11,7 @@ const Counter:React.FC<CounterFunc> = ({setTotal}) => {
    }
    return (
       <div className="counter">
-         <span className="number">{count}</span>
+         <span className="number">{count}<span className="total">/{total}</span></span>
          <button onClick={handleCount} className="button">Add +</button>
       </div>
    )

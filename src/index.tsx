@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import AppCounter from './AppCounter';
+import AppProducts from './AppProducts';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <AppCounter />
+    <AppProducts />
   </React.StrictMode>
 );
 

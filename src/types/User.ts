@@ -18,3 +18,10 @@ export interface CounterFunc {
       total ?: number;
       setTotal : Dispatch<SetStateAction<number>>
 }
+
+export interface ProductType {
+      id: number;
+      name : string;
+      price: string;
+}
+
