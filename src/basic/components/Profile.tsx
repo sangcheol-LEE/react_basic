@@ -1,6 +1,6 @@
 import React from 'react'
 import "../App.css";
-import {User} from "../types/User"
+import {User} from "../../types/User"
 import Avartar from './Avartar';
 
 const Profile:React.FC<User> = ({name, title, image, isNew}) => {

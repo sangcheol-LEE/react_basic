@@ -1,7 +1,7 @@
 import React,{useState,useEffect,useCallback} from 'react'
-import productData from "../data/products.json"
-import saleProduct from "../data/sale_products.json";
-import { ProductType } from '../types/User';
+import productData from "../../data/products.json"
+import saleProduct from "../../data/sale_products.json";
+import { ProductType } from '../../types/User';
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import {AvartarType} from "../types/User";
+import {AvartarType} from "../../types/User";
 
 const Avartar:React.FC<AvartarType> = ({image, isNew}) => {
    return (

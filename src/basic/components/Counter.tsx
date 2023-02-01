@@ -1,6 +1,6 @@
 import React,{useState}from 'react'
 import "../App.css"
-import {CounterFunc} from "../types/User";
+import {CounterFunc} from "../../types/User";
 
 const Counter:React.FC<CounterFunc> = ({total,setTotal}) => {
    const [count, setCount] = useState<number>(0)

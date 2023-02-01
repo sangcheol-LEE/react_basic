@@ -1,7 +1,7 @@
 import React from "react";
 import Avartar from "./components/Avartar";
 import Profile from "./components/Profile";
-import { User } from "./types/User";
+import { User } from "../types/User";
 
 const AppProfile:React.FC = () => {
 
