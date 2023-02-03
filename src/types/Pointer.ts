@@ -3,7 +3,7 @@ export interface Dots{
    y : number;
 }
 
-interface Mentor {
+export interface Mentor {
    name ?: string | null;
    title ?: string | null;
 }
@@ -11,7 +11,13 @@ interface Mentor {
 export interface Person {
    name : string ;
    title : string;
-   mentor : Mentor
+   mentor : Mentor;
+}
+
+export interface Persons {
+   name : string ;
+   title : string;
+   mentors ?: Mentor[]
 }
 
 
