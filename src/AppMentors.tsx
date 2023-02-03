@@ -48,9 +48,9 @@ const AppMentors = () => {
          </button>
          <button
             onClick={() => {
-               const name = prompt("멘토의 이름은 무엇입니까 ?")
-               const title = prompt("멘토의 직업은 무엇입니까 ?")
-               setPerson((initialState) => ({
+               const name:string | null = prompt("멘토의 이름은 무엇입니까 ?")
+               const title:string | null = prompt("멘토의 직업은 무엇입니까 ?")
+               setPerson((initialState:Persons) => ({
                   ...initialState,
                   mentors : initialState.mentors?.concat({name,title})
                }))
@@ -58,10 +58,10 @@ const AppMentors = () => {
          >멘토 추가 하기</button>
          <button
             onClick={() => {
-               const name = prompt("삭제하고 싶은 멘토의 이름은 무엇입니까 ?")
-               setPerson((initialState) => ({
+               const name:string|null = prompt("삭제하고 싶은 멘토의 이름은 무엇입니까 ?")
+               setPerson((initialState: Persons) => ({
                   ...initialState,
-                  mentors: initialState.mentors?.filter((mentor) => mentor.name !== name)
+                  mentors: initialState.mentors?.filter((mentor:Mentor) => mentor.name !== name)
                }))
             }}
          >멘토 삭제 하기</button>
