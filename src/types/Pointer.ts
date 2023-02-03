@@ -17,7 +17,7 @@ export interface Person {
 export interface Persons {
    name : string ;
    title : string;
-   mentors ?: Mentor[]
+   mentors : Mentor[]
 }
 
 
