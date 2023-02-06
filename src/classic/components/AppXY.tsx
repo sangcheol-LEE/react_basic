@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import { PointerEvent } from 'react';
-import AppMentor from './AppMentor';
+import AppMentor from '../../basic/AppMentor';
 import "./AppXY.css";
-import { Dots } from './types/Pointer';
+import { Dots } from '../../types/Pointer';
 const AppXY = () => {
    // const [mV, setMv] = useState<number[]>([])
    // const [x, setX] = useState<number>(0);

@@ -1,8 +1,8 @@
 import React,{useReducer, useState} from 'react'
-import {  Mentor, Persons } from './types/Pointer';
-import { HandleDelete, HandleUpdate, HandleAdd } from './types/FunctionType';
-import { personReducer } from './reducer/person-reducer';
-import { PersonReducer } from './reducer/person-reducer';
+import {  Mentor, Persons } from '../types/Pointer';
+import { HandleDelete, HandleUpdate, HandleAdd } from '../types/FunctionType';
+import { personReducer } from '../reducer/person-reducer';
+import { PersonReducer } from '../reducer/person-reducer';
 
 const AppMentors = () => {
    // const [person, setPerson] = useState<Persons>(initialState);

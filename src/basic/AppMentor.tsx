@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Person } from './types/Pointer'
+import { Person } from '../types/Pointer'
 const AppMentor:React.FC = (props : any) => {
 
    const [person, setPerson] = useState<Person>({

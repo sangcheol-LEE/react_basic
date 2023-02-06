@@ -1,8 +1,8 @@
 import React,{useState,useReducer} from 'react';
 import { ChangeEvent } from 'react';
 import { FormEvent } from 'react';
-import { UserInfo } from './types/UserInfo';
-import { userReducer,userReducerType } from './reducer/user-reducer';
+import { UserInfo } from '../types/UserInfo';
+import { userReducer,userReducerType } from '../reducer/user-reducer';
 
 const userDatas:UserInfo = {
    name : "",
